@@ -1,0 +1,124 @@
+@use "../../foundation/_helpers" as *;
+
+.body--fixed {
+  position: fixed;
+}
+
+.c-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(57px + 48px);
+  padding: 0 48px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  background: #fff;
+  transition: transform 0.2s;
+  align-items: center;
+  @media screen and (max-width: 1024px) {
+    height: 72px;
+    padding: 0 24px;
+  }
+  &__logo {
+    img {
+      height: 52px;
+      @media screen and (max-width: 1024px) {
+        height: 40px;
+      }
+    }
+  }
+  &__toggle {
+    pointer-events: auto;
+    display: none;
+    @include font-size(21);
+    width: 32px;
+    text-align: center;
+    padding: 8px 0;
+    line-height: 1;
+    z-index: 9999;
+    cursor: pointer;
+    @media screen and (max-width: 1024px) {
+      display: block;
+    }
+    &--open {
+      .c-header__bars {
+        display: none;
+      }
+      .c-header__times {
+        display: block;
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 1024px) {
+      display: block;
+      background: #fff;
+      width: 100%;
+      padding: 48px 24px;
+      box-sizing: border-box;
+      border-top: solid 1px #888;
+      transition: all 0.2s;
+    }
+    &--open {
+      display: block;
+      height: 100vh;
+      transition: all 0.2s;
+    }
+  }
+  &__navInner {
+    display: flex;
+    @media screen and (max-width: 1024px) {
+      display: block;
+      text-align: center;
+    }
+  }
+  &__navItem {
+    margin: 0 32px 0 0;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:last-child a {
+      padding-right: 0;
+    }
+    @media screen and (max-width: 1024px) {
+      margin: 0 0 24px 0;
+      @include font-size(16);
+    }
+  }
+  &__navLink {
+    padding: 4px 8px;
+    color: $color-text;
+    font-weight: bold;
+    &:hover {
+      color: $color-link-hover;
+    }
+    @media screen and (max-width: 1024px) {
+      padding: 0;
+    }
+  }
+  &__contact {
+    margin: 0 0 0 32px;
+    @media screen and (max-width: 1024px) {
+      margin: 0;
+    }
+  }
+}
+
+.c-header__bars {
+}
+.c-header__times {
+  display: none;
+}
+
+.drawer-open .c-header__bars {
+  display: none;
+}
+
+.drawer-open .c-header__times {
+  display: block;
+}

@@ -1,0 +1,66 @@
+@use '../../foundation/_helpers' as*;
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  @media screen and (max-width: 1024px) {
+  }
+}
+
+.swiper-slide {
+  position: relative;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-bg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+  box-sizing: border-box;
+  background: linear-gradient(0deg, #000, transparent);
+  opacity: 0.5;
+}
+
+.swiper-text {
+  width: 100%;
+  margin: 8px 0 0 0;
+  small {
+    display: block;
+    @include font-size(14);
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  //box-shadow: 0 2px 12px rgba(0,0,0,.15);
+  border-radius: 4px;
+}
+
+.swiper-button-prev {
+  color: #000;
+}
+
+.swiper-button-next {
+  color: #000;
+}

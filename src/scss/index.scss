@@ -1,0 +1,17 @@
+@use "foundation/_reset";
+@use "foundation/_helpers" as *;
+
+@use "layout/_layout";
+
+@use "object/component/_header";
+@use "object/component/_footer";
+@use "object/component/_section";
+@use "object/component/_mv";
+@use "object/component/_tabMenu";
+@use "object/component/_swiper";
+@use "object/component/_button";
+@use "object/component/_drawer";
+
+@use "object/project/_home";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
