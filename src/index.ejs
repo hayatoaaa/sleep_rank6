@@ -1,195 +1,845 @@
 <% meta = { pageTitle:'ホーム', desc:'このサイトの説明' }; %>
 
 <%- include('templates/_head') -%>
-<%- include('templates/_header') -%>
 
-<div class="l-wrapper p-index">
+<body>
+  <main>
+    <h1>
+      <img
+        src="/images/fv.png"
+        class="fv-image"
+        alt="人気のマットレス 6ブランド徹底比較"
+      />
+    </h1>
+    <section id="section1">
+      <p>
+        そんなあなたのお悩みを解消するために、100人以上の方への体験調査と〇〇や〇〇の睡眠のプロの方n名に6つのマットレスをレビューしていただきました！
+      </p>
+      <ul class="col col-2">
+        <li class="col-item">
+          <img src="/images/dummy.png" />
+          <p class="caption">権威者によるマットレス体験会</p>
+        </li>
+        <li class="col-item">
+          <img src="/images/dummy.png" />
+          <p class="caption">権威者によるマットレス体験会</p>
+        </li>
+        <li class="col-item">
+          <img src="/images/dummy.png" />
+          <p class="caption">権威者によるマットレス体験会</p>
+        </li>
+        <li class="col-item">
+          <img src="/images/dummy.png" />
+          <p class="caption">権威者によるマットレス体験会</p>
+        </li>
+      </ul>
+    </section>
+    <section id="section2">
+      <h2>〇〇に〇〇な〇〇n名による監修</h2>
+      <ul class="expert-list">
+        <li class="expert-item">
+          <img src="/images/icon-nakatomi.png" />
+          <p class="caption">
+            <span>認定エステティシャン／セラピスト</span>
+            中冨先生
+          </p>
+        </li>
+        <li class="expert-item">
+          <img src="/images/icon-kimura.png" />
+          <p class="caption">
+            <span>hogehogehoe</span>
+            木村先生
+          </p>
+        </li>
 
-<div class="c-mv">
-  <div class="c-mv__inner">
-    <div class="c-mv__image">
-    </div>
-  </div>
-</div>
+        <li class="expert-item">
+          <img src="/images/icon-koshiishi.png" />
+          <p class="caption">
+            <span>こしいし整体院 院長<br />鍼灸師・柔道整復師</span>
+            輿石先生
+          </p>
+        </li>
 
-<div class="c-section">
-  <h3 class="p-swiper__title">イオンタウン出店者募集サイトです。全国のイオンタウンに出店してみませんか？<br />
-    出店可能な店舗や各店舗の出店条件等をご覧いただけます。お気軽にお問い合わせください。</h3>
-  <!-- <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img class="" src="/k/images/swiper1.png" />
-        <p class="swiper-text">バレンタインフェア<small>2023年1月20日〜2023年2月14日</small></p>
-      </div>
-      <div class="swiper-slide">
-        <img class="" src="/k/images/swiper2.png" />
-        <p class="swiper-text">パン祭り<small>2023年1月20日〜2023年2月14日</small></p>
-      </div>
-      <div class="swiper-slide">
-        <img class="" src="/k/images/swiper3.png" />
-        <p class="swiper-text">子供服フェア<small>2023年1月20日〜2023年2月14日</small></p>
-      </div>
-      <div class="swiper-slide">
-        <img class="" src="/k/images/swiper4.png" />
-        <p class="swiper-text">スイーツフェア<small>2023年1月20日〜2023年2月14日</small></p>
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div> -->
-</div>
+      </ul>
+    </section>
 
-<div class="c-section">
-  <h3 class="c-section__title">出店できる施設を探す</h3>
-  <p class="c-section__titleButton"><a href="/lease/buildings" class="c-button c-button--primary">施設一覧</a></p>
-  <div class="p-indexBrandList">
-    <div class="p-indexBrandList__item">
-      <div class="p-indexBrandList__image"><img src="/k/images/buildings-yukarigaoka.jpg" /></div>
-      <div class="p-indexBrandList__inner">
-        <p class="p-indexBrandList__title">イオンタウンユーカリが丘</p>
-        <p class="p-indexBrandList__address">千葉県佐倉市</p>
-        <p class="p-indexBrandList__text">京成本線ユーカリが丘駅から徒歩10分。国道296号沿いにあり電車・車ともに良好なアクセス。館内は、3階建ての2棟設計で、連絡通路で直結し非常に回遊性の高い造りです。総合スーパーである「イオンスタイル」を核に衣料品・飲食・教室・理美容・各種サービスとバラエティ豊かな約120の専門店が集積、また、近隣にタワーマンション4棟あり。2023年11月には新築マンション1棟が入居開始し、30~40代ファミリーを中心に人口増加が見込まれるエリアです。</p>
-      </div>
-      <p class="p-indexBrandList__button"><a href="/lease/buildings/yukarigaoka" class="c-outlineButton c-outlineButton--primary" target="_blank" rel="noopener noreferrer">出店区画を見る</a></p>
-    </div>
-    <div class="p-indexBrandList__item">
-      <div class="p-indexBrandList__image"><img src="/k/images/buildings-yoshikawaminami.jpg" /></div>
-      <div class="p-indexBrandList__inner">
-        <p class="p-indexBrandList__title">イオンタウン吉川美南</p>
-        <p class="p-indexBrandList__address">埼玉県吉川市</p>
-        <p class="p-indexBrandList__text">2012年3月にＪＲ武蔵野線の新駅として開業した吉川美南駅の駅前に位置しており、東京駅への直通列車も通り、都心部へのアクセスに恵まれたエリアです。都心で働く方々のベッドタウンとして、今後ますます人口の増加と街の発展が見込まれています。川を挟んで東西に分かれる2棟の施設は、連絡通路で移動が可能で、非常に回遊性の高い造りになっています。2021年7月にオープンした東街区では、「癒しと食の総合リゾート」やウエルネスな生活を楽しくサポートする専門店などを中心に、地域の皆さまのくらしをちょっと特別にする、新たなライフスタイルをご提案してまいります。</p>
-      </div>
-      <p class="p-indexBrandList__button"><a href="/lease/buildings/yoshikawaminami" class="c-outlineButton c-outlineButton--primary" target="_blank" rel="noopener noreferrer">出店区画を見る</a></p>
-    </div>
-    <div class="p-indexBrandList__item">
-      <div class="p-indexBrandList__image"><img src="/k/images/buildings-kamisato.jpg" /></div>
-      <div class="p-indexBrandList__inner">
-        <p class="p-indexBrandList__title">イオンタウン上里</p>
-        <p class="p-indexBrandList__address">埼玉県児玉郡</p>
-        <p class="p-indexBrandList__text">JR高崎線神保原駅より徒歩、バスで訪れることが可能、国道17号に面しており、電車、車で良好なアクセスです。2階建てのクローズドモールで、雨の日も安心して買い物ができます。食品スーパーのベルクを核に、ファッション、フード、理美容等のサービス等約60の専門店が集積。</p>
-      </div>
-      <p class="p-indexBrandList__button"><a href="/lease/buildings/kamisato" class="c-outlineButton c-outlineButton--primary" target="_blank" rel="noopener noreferrer">出店区画を見る</a></p>
-    </div>
-    <div class="p-indexBrandList__item">
-      <div class="p-indexBrandList__image"><img src="/k/images/buildings-oyumino.jpg" /></div>
-      <div class="p-indexBrandList__inner">
-        <p class="p-indexBrandList__title">イオンタウンおゆみ野</p>
-        <p class="p-indexBrandList__address">千葉県千葉市</p>
-        <p class="p-indexBrandList__text">総合スーパーのマックスバリュを核に、ファッション、フード、スクールから理容のサービスまで、バラエティ豊かな約60の専門店を集積。最寄りの京成おゆみ野駅からは、路線バスも出ておりアクセスも良好。</p>
-      </div>
-      <p class="p-indexBrandList__button"><a href="/lease/buildings/oyumino" class="c-outlineButton c-outlineButton--primary" target="_blank" rel="noopener noreferrer">出店区画を見る</a></p>
-    </div>
-    <div class="p-indexBrandList__item">
-      <div class="p-indexBrandList__image"><img src="/k/images/buildings-naritatomisato.jpg" /></div>
-      <div class="p-indexBrandList__inner">
-        <p class="p-indexBrandList__title">イオンタウン成田富里</p>
-        <p class="p-indexBrandList__address">千葉県成田市</p>
-        <p class="p-indexBrandList__text">JR成田駅、京成成田駅から徒歩10分の場所に位置しており、国道51号線にも接しており電車、徒歩、車でのアクセスが良好なショッピングセンターです。また成田山新勝寺、成田国際空港からも近く、国内外問わず多くの観光客も訪れる地域です。総合スーパーマーケットのマックスバリュを核に、スーパースポーツゼビオ、ヤマダデンキといった大型専門店をはじめ、ファッション、フード、サービスの約60の専門店が集積しています。</p>
-      </div>
-      <p class="p-indexBrandList__button"><a href="/lease/buildings/naritatomisato" class="c-outlineButton c-outlineButton--primary" target="_blank" rel="noopener noreferrer">出店区画を見る</a></p>
-    </div>
-    <div class="p-indexBrandList__item">
-      <div class="p-indexBrandList__image"><img src="/k/images/buildings-kanazawashimeno.jpg" /></div>
-      <div class="p-indexBrandList__inner">
-        <p class="p-indexBrandList__title">イオンタウン金沢示野</p>
-        <p class="p-indexBrandList__address">石川県金沢市</p>
-        <p class="p-indexBrandList__text">車で最も便利なショッピングセンターをモットーに、ゾーンごとに目的店舗の近くに車を止めることが出来るので、利便性に優れています。８棟の商業施設がありますが、公道により区画も分かれていますので、ユーザーフレンドリーな作りです。国道8号線沿線に立地し、観光地として日本有数の金沢駅からバスで約20分と車または電車＋バスでアクセスが可能です。</p>
-      </div>
-      <p class="p-indexBrandList__button"><a href="/lease/buildings/kanazawashimeno" class="c-outlineButton c-outlineButton--primary" target="_blank" rel="noopener noreferrer">出店区画を見る</a></p>
-    </div>
-    <div class="p-indexBrandList__item">
-      <div class="p-indexBrandList__image"><img src="/k/images/buildings-asahi.jpg" /></div>
-      <div class="p-indexBrandList__inner">
-        <p class="p-indexBrandList__title">イオンタウン旭</p>
-        <p class="p-indexBrandList__address">千葉県旭市</p>
-        <p class="p-indexBrandList__text">旭市多世代交流施設おひさまテラスを中心に、県内最大級の無印良品、地元食材をそろえるイオンスタイルを展開し、地域のライフスタイルを応援します。隣接する旭中央病院と道の駅と共に、新しいまちづくり”みらいあさひ”の中で、官と民が協力し持続可能な社会を目指し取り組むショッピングセンターです。旭中央病院東向けに旭駅からコミュニティバスや東京からの高速バスもご利用いただけます。</p>
-      </div>
-      <p class="p-indexBrandList__button"><a href="/lease/buildings/asahi" class="c-outlineButton c-outlineButton--primary" target="_blank" rel="noopener noreferrer">出店区画を見る</a></p>
-    </div>
-    <div class="p-indexBrandList__item">
-      <div class="p-indexBrandList__image"><img src="/k/images/buildings-fujimino.jpg" /></div>
-      <div class="p-indexBrandList__inner">
-        <p class="p-indexBrandList__title">イオンタウンふじみ野</p>
-        <p class="p-indexBrandList__address">埼玉県ふじみ野市</p>
-        <p class="p-indexBrandList__text">ふじみ野市役所の目の前に立地し、東武東上線上福岡駅から徒歩15分、JR川越線南古谷駅からバスで10分で訪れることが可能。県道56号線に面しており、車でも来店しやすい立地。館内は、中央入口を入ると3階までの吹き抜けスペースがあり、開放的な空間となっています。総合スーパーのイオンスタイルを核に、ファッション、フード、スクールから理美容のサービスまで、バラエティ豊かな95の専門店を集積。</p>
-      </div>
-      <p class="p-indexBrandList__button"><a href="/lease/buildings/fujimino" class="c-outlineButton c-outlineButton--primary" target="_blank" rel="noopener noreferrer">出店区画を見る</a></p>
-    </div>
-    <div class="p-indexBrandList__item">
-      <div class="p-indexBrandList__image"><img src="/k/images/buildings-mitominami.jpg" /></div>
-      <div class="p-indexBrandList__inner">
-        <p class="p-indexBrandList__title">イオンタウン水戸南</p>
-        <p class="p-indexBrandList__address">茨城県東茨城郡</p>
-        <p class="p-indexBrandList__text">駐車場を囲む形で、種類別に４つの棟、モール棟・物販棟・アミューズ棟・飲食棟があり、一周回ってお買い物、お食事を楽しむことができます。メインとなるモール棟はオープンエアーで気持ちよくお買い物が楽しめます。週末にはセンターコートで地元アーティストなどのライブもあり、集客が見込める施設です。また、茨城県で人口最大都市の水戸市に隣接した茨城町で唯一のショッピングセンターとなります。４世代でくつろぎ、楽しめるショッピングセンターを目指しております。国道６号線に面した立地でSCの３方面からの入出庫可能で車でのアクセス良好。</p>
-      </div>
-      <p class="p-indexBrandList__button"><a href="/lease/buildings/mitominami" class="c-outlineButton c-outlineButton--primary" target="_blank" rel="noopener noreferrer">出店区画を見る</a></p>
-    </div>
-    <div class="p-indexBrandList__item">
-      <div class="p-indexBrandList__image"><img src="/k/images/buildings-moriya.jpg" /></div>
-      <div class="p-indexBrandList__inner">
-        <p class="p-indexBrandList__title">イオンタウン守谷</p>
-        <p class="p-indexBrandList__address">茨城県守谷市</p>
-        <p class="p-indexBrandList__text">核店舗のフードスクエアカスミをはじめ、ユニクロ、イオンシネマ、スポーツデポ、無印良品、カルディコーヒーファーム、スターバックスなど地域一番店やイオンタウン守谷にしかない専門店が多数出店しております。国道294号線に面し、かつ、つくばエキスプレス守谷駅近くに立地、車でも電車でも良好なアクセスが可能です。</p>
-      </div>
-      <p class="p-indexBrandList__button"><a href="/lease/buildings/moriya" class="c-outlineButton c-outlineButton--primary" target="_blank" rel="noopener noreferrer">出店区画を見る</a></p>
-    </div>
-    <div class="p-indexBrandList__item">
-      <div class="p-indexBrandList__image"><img src="/k/images/buildings-tateyama.jpg" /></div>
-      <div class="p-indexBrandList__inner">
-        <p class="p-indexBrandList__title">イオンタウン館山</p>
-        <p class="p-indexBrandList__address">千葉県館山市</p>
-        <p class="p-indexBrandList__text">イオン館山店を核に、ヤマダ電機・ニトリがサブ核として約50店舗で構成。2,000台の無料駐車場を有し地元のお客さまはもとより、地域柄年間を通して多くの観光客が訪れます。</p>
-      </div>
-      <p class="p-indexBrandList__button"><a href="/lease/buildings/tateyama" class="c-outlineButton c-outlineButton--primary" target="_blank" rel="noopener noreferrer">出店区画を見る</a></p>
-    </div>
-    <div class="p-indexBrandList__item">
-      <div class="p-indexBrandList__image"><img src="/k/images/buildings-nodananakodai.jpg" /></div>
-      <div class="p-indexBrandList__inner">
-        <p class="p-indexBrandList__title">イオンタウン野田七光台</p>
-        <p class="p-indexBrandList__address">千葉県野田市</p>
-        <p class="p-indexBrandList__text">国道16号線から車ですぐの所に立地しており、車でのご来場は非常に便利です。また、東武野田線川間駅南口より野田市運行のまめバスがご利用いただけます。スーパーマーケットのマックスバリュを核に、ホームセンター、七光台温泉ファッション、フードから理美容のサービスまで、バラエティ豊かな約40の専門店を集積。また中央のメディカルモール内に医療施設が多く、集約性に優れた非常に便利なショッピングセンターです。</p>
-      </div>
-      <p class="p-indexBrandList__button"><a href="/lease/buildings/nodananakodai" class="c-outlineButton c-outlineButton--primary" target="_blank" rel="noopener noreferrer">出店区画を見る</a></p>
-    </div>
-  </div>
-  <p class="p-indexBrandList__link"><a href="/lease/inquiries">その他施設は、こちらからお問い合わせください</a></p>
-</div>
+    <section id="section3">
+      <h2>入眠するまでの人体のメカニズム</h2>
+      <img src="/images/dummy.png" />
+      <p>
+        交感神経は朝に働きはじめ、昼過ぎにピークを迎えます。一方、リラックスしているときに働く副交感神経は、日没頃から活発になり、睡眠中にピークを迎えます。そのため、スムーズな入眠にはベッドに入った際にリラックスすることができているかが重要になります。
+      </p>
+      <p>
+        ベッドに入る際にリラックスしている状態を感じられるかは、マットレスの肌触りや横になった際に体への負担を感じにくいかの他にも適切な室温にすることや、リラックス効果のあるアロマを炊いたりと様々な方法があります。
+      </p>
+      <p>
+        今回の調査では、マットレスに着目して、リラックスした状態を感じられるおすすめのマットレスのランキングをご紹介していきます。
+      </p>
+    </section>
 
-<div class="c-section" id="sec3">
-  <h2 class="c-section__title">イオンタウンと一緒にSCづくりに取り組んでいきませんか？</h2>
-  <p class="c-section__text">イオンタウンは地域の皆様の拠点の役割を果たす新たなSCフォーマットの開発を行っていきます。様々な業種業態（物販・飲食・サービス）の応募をお待ちしております。</p>
-  <p class="c-section__text">SCは効率よく集客できる複合型商業施設。イオンタウンが手がけるショッピングセンターは、全国規模の豊富な土地情報から、商圏や消費者動向を見据えた最適な立地を選定するだけでなく、建物も設計から施工・アフターフォローまでバックアップ。さらに運営・管理ではこれまでの豊富なノウハウを活かし、無駄のないローコスト運営を推進し、適切な事業戦略を支援。テナントさまのニーズに合わせた事業戦略を、集客力、話題性に満ちたショッピングセンターの開発により、トータルにバックアップいたします。</p>
-  <div class="p-about">
-    <div class="p-about__item">
-      <img src="/k/images/pic1.jpg" />
-      <p class="p-about__name">クローズドモール</p>
-    </div>
-    <div class="p-about__item">
-      <img src="/k/images/pic2.jpg" />
-      <p class="p-about__name">オープンモール</p>
-    </div>
-    <div class="p-about__item">
-      <img src="/k/images/pic3.jpg" />
-      <p class="p-about__name">都市型</p>
-    </div>
-  </div>
-  </div>
-</div>
+    <section id="section4">
+      <h2>
+        寝心地がいいと感じる
+        <br />
+        マットレスは？
+      </h2>
+      <p>100人の方に実際に寝て体感してもらいました！</p>
+      <img src="/images/dummy.png" />
+      <p>
+        エマスリープ、Nell、Limne、トゥルースリーパー、コアラマットレス、エアウィーブのマットレスを名前を隠した状態で体験してもらいアンケート調査
+      </p>
+      <h3 class="emphasis-sentence">
+        20名の方から睡眠ログを提供いただき、実際の睡眠の快適度合いを調査
+      </h3>
+      <img src="/images/dummy.png" />
+    </section>
 
-<div class="c-section">
-  <div class="p-indexDownload">
-    <h3 class="c-section__title">出店に関するお問い合わせ</h3>
-    <p class="p-indexDownload__text">出店に関するご質問、ご相談がございましたらお気軽にお問い合わせください。</p>
-    <p><a href="/lease/inquiries" class="c-button c-button--normal c-button--primary">お問い合わせ</a></p>
-    <p class="p-indexDownload__aside">※イオンタウン各店への直接のお問い合わせはご遠慮ください。</p>
-  </div>
-</div>
+    <section id="section5">
+      <h2>
+        人気のマットレスランキング
+      </h2>
+      <div class="ranking">
+        <div class="grid-container">
+          <div class="grid-header">
+            <div>順位</div>
+            <div>商品名</div>
+            <div>快適度</div>
+            <div>気持ち良さ</div>
+            <div>負担の少なさ</div>
+            <div>寝返り</div>
+            <div>脱力感</div>
+            <div>通気性</div>
+            <div>総平均値</div>
+          </div>
+        </div>
+        <div class="grid-row">
+          <div class="icon-no1">1</div>
+          <div>LIMNE</div>
+          <div>8.38</div>
+          <div>8.3</div>
+          <div>8.26</div>
+          <div>7.97</div>
+          <div>8.4</div>
+          <div>7.35</div>
+          <div>8.11</div>
+        </div>
+        <div class="grid-row">
+          <div class="icon-no2">2</div>
+          <div>koala</div>
+          <div>7.98</div>
+          <div>7.88</div>
+          <div>7.62</div>
+          <div>7.61</div>
+          <div>7.57</div>
+          <div>7.1</div>
+          <div>7.63</div>
+        </div>
+        <div class="grid-row">
+          <div class="icon-no3">3</div>
+          <div>Emma</div>
+          <div>7.53</div>
+          <div>7.48</div>
+          <div>7.21</div>
+          <div>7.21</div>
+          <div>7.25</div>
+          <div>6.71</div>
+          <div>7.23</div>
+        </div>
+        <div class="grid-row">
+          <div>4</div>
+          <div>NELL</div>
+          <div>6.84</div>
+          <div>6.8</div>
+          <div>6.7</div>
+          <div>6.74</div>
+          <div>6.68</div>
+          <div>6.14</div>
+          <div>6.65</div>
+        </div>
+        <div class="grid-row">
+          <div>5</div>
+          <div>エアウィーヴ</div>
+          <div>5.41</div>
+          <div>5.13</div>
+          <div>5.01</div>
+          <div>5.15</div>
+          <div>4.82</div>
+          <div>5.18</div>
+          <div>5.12</div>
+        </div>
+        <div class="grid-row">
+          <div>6</div>
+          <div>トゥルースリーパー</div>
+          <div>5.08</div>
+          <div>4.89</div>
+          <div>5.00</div>
+          <div>5.12</div>
+          <div>4.65</div>
+          <div>5.50</div>
+          <div>5.04</div>
+        </div>
+      </div>
+      <div class="scroll">
+        <i class="fa fa-arrows-left-right"></i>
+        左右にスクロールできます
+      </div>
+      <div class="ranking-comment">
+        <div class="ranking-commenter">
+          <img src="/images/dummy.png" />
+          <span>睡眠カウンセラー</span>
+          <p>山田先生</p>
+        </div>
+        <div class="ranking-comment-content">
+          <h3 class="emphasis-sentence">「マットレスを選ぶ決め手は〇〇」</h3>
+          <p>エマスリープ、Nell、Limne、トゥルースリーパー、コアラマットレス、エアウィーブのマットレスを名前を隠した状態で体験してもらいアンケート調査</p>
+        </div>
+      </div>
+    </section>
 
+    <section id="section6" class="search-section">
+      <h2>
+        あなたにぴったりのマットレスは？
+      </h2>
+      <h3 class="emphasis-sentence">
+        <span>
+          100名の方へのアンケート調査をもとに
+        </span>
+        性別、年代、体重、職業からあなたにぴったりのマットレスが見つかる！
+      </h3>
+      
+      <div class="search-options">
+        <div class="option-box">
+          <div class="option-name">性別から探す</div>
+          <form class="option-inner" id="form-sex">
+            <ul class="options">
+              <li>
+                <input class="search-option-input" type="radio" id="option-male" name="sex" value="male">
+                <label for="option-male" class="option-label"><i class="fa fa-check"></i>男性</label>
+              </li>
+              <li>
+                <input class="search-option-input" type="radio" id="option-female" name="sex" value="female">
+                <label for="option-female" class="option-label"><i class="fa fa-check"></i>女性</label>
+              </li>
+            </ul>
+            <div name="sex" id="check-sex" type="submit" class="search-button">
+              <i class="fa fa-search"></i>検索
+            </div>
+          </form>
+        </div>
 
-</div>
-<!--/l-wrapper-->
+        <div class="option-box">
+          <div class="option-name">年代から探す</div>
+          <form class="option-inner" id="form-old">
+            <ul class="options">
+              <li>
+                <input class="search-option-input" type="radio" id="option-18" name="old">
+                <label for="option-18" class="option-label"><i class="fa fa-check"></i>18歳〜</label>
+              </li>
+              <li>
+                <input class="search-option-input" type="radio" id="option-20" name="old">
+                <label for="option-20" class="option-label"><i class="fa fa-check"></i>20歳〜</label>
+              </li>
+            </ul>
+            <div type="submit" class="search-button">
+              <i class="fa fa-search"></i>検索
+            </div>
+          </form>
+        </div>
+      </div>
 
-<%- include('templates/_footer') -%>
+    </section>
+
+    <!-- 男性 -->
+    <section id="male" class="item-section">
+      <h2>
+        男性に<br/>
+        おすすめのマットレスは？
+      </h2>
+
+      <div class="item-info-wrapper">
+        <p class="item-rank">ランキング1位</p>
+
+        <div class="item-info">
+          <div class="item-name">
+            <p>Limne</p>
+          </div>
+          <div class="item-image">
+            <img src="/images/main-limne.jpg" />
+          </div>
+          <div class="item-price">
+            ¥79,900~
+          </div>
+          <div class="review-summary">
+            <span>総合評価</span>
+            <img class="review-summary-star" src="/images/star-4.5.svg">
+          </div>
+          <div class="cv-buttons">
+            <a href="https://px.a8.net/svt/ejp?a8mat=3T8FRT+P086Q+4VLO+5ZMCI" rel="nofollow" class="outline-button">
+              公式サイトで商品情報を見る
+            </a>
+            <a href="https://hb.afl.rakuten.co.jp/ichiba/31d8db13.430c5d10.31d8db14.fe17bd16/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flimne%2Fv_41923043524792%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" class="outline-button">
+              楽天で商品情報を見る
+            </a>
+            <a href="https://amzn.to/3HtSRn7" class="outline-button">
+              Amazonで商品情報を見る
+            </a>
+          </div>
+          <div class="review">
+            <img src="/images/graph-limne.png" />
+          </div>
+          <div class="category-ranking">
+            <h3 class="item-sub-section-title">ランキング情報</h3>
+            <div class="all-rank no1">
+              <i class="fa fa-crown"></i>
+              睡眠ログ総合1位
+            </div>
+            <ul class="category-rank-list">
+              <li class="category-rank-item no1">
+                <p>男性</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>女性</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>18歳〜</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>20歳〜</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>30歳〜</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>40歳〜</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>50歳〜</p>
+              </li>
+              <li class="category-rank-item no2">
+                <p>60歳〜</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>~40kg</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>~50kg</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>~60kg</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>~70kg</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>71kg~</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>営業職</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>デスクワーク職</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>サービス職</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>医療従事者・整体師</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>学生（医療、身体関係）</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="item-sub-section-title">商品情報</h3>
+          <dl class="detail-info">
+            <dt>サイズ展開</dt>
+            <dd>
+              <ul>
+                <li class="active">シングル</li>
+                <li class="active">セミダブル</li>
+                <li class="active">ダブル</li>
+                <li>クイーン</li>
+                <li>キング</li>
+              </ul>
+            </dd>
+
+            <dt>価格</dt>
+            <dd>¥79,900~</dd>
+
+            <dt>保証期間</dt>
+            <dd>10年間</dd>
+
+            <dt>決済方法</dt>
+            <dd>
+              <ul>
+                <li class="active">VISA</li>
+                <li class="active">MasterCard</li>
+                <li class="active">AMEX</li>
+                <li class="active">銀行振込</li>
+                <li class="active">AmazonPay</li>
+                <li class="active">ShopPay</li>
+                <li class="active">無金利分割決済</li>
+              </ul>
+          </dl>
+        </div>
+        
+        <div>
+          <h3 class="item-sub-section-title">専門家レビュー</h3>
+          <div class="expert-review">
+            <img src="/images/limne-review-nakatomi.png">
+            <img src="/images/limne-review-kimura.png">
+            <img src="/images/limne-review-koshiishi.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="item-info-wrapper">
+        <p class="item-rank">ランキング2位</p>
+
+        <div class="item-info">
+          <div class="item-name">
+            <p>koala</p>
+          </div>
+          <div class="item-image">
+            <img src="/images/main-koala.jpg" />
+          </div>
+          <div class="item-price">
+            ¥69,000~
+          </div>
+          <div class="review-summary">
+            <span>総合評価</span>
+            <img class="review-summary-star" src="/images/star-4.svg">
+          </div>
+          <div class="cv-buttons">
+            <a href="https://hb.afl.rakuten.co.jp/ichiba/31d8d064.6a828d2f.31d8d065.80475f4d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkoalasleep%2F101-0035%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" class="outline-button">
+              楽天で商品情報を見る
+            </a>
+            <a href="https://amzn.to/3VrQVRV" class="outline-button">
+              Amazonで商品情報を見る
+            </a>
+          </div>
+          <div class="review">
+            <img src="/images/graph-koala.png" />
+          </div>
+          <div class="category-ranking">
+            <h3 class="item-sub-section-title">ランキング情報</h3>
+            <div class="all-rank no2">
+              <i class="fa fa-crown"></i>
+              睡眠ログ総合2位
+            </div>
+            <ul class="category-rank-list">
+              <li class="category-rank-item no2">
+                <p>男性</p>
+              </li>
+              <li class="category-rank-item no2">
+                <p>女性</p>
+              </li>
+              <li class="category-rank-item no3">
+                <p>18歳〜</p>
+              </li>
+              <li class="category-rank-item no2">
+                <p>20歳〜</p>
+              </li>
+              <li class="category-rank-item no2">
+                <p>30歳〜</p>
+              </li>
+              <li class="category-rank-item no2">
+                <p>40歳〜</p>
+              </li>
+              <li class="category-rank-item">
+                <p>50歳〜</p>
+              </li>
+              <li class="category-rank-item no1">
+                <p>60歳〜</p>
+              </li>
+              <li class="category-rank-item no3">
+                <p>~40kg</p>
+              </li>
+              <li class="category-rank-item no2">
+                <p>~50kg</p>
+              </li>
+              <li class="category-rank-item no2">
+                <p>~60kg</p>
+              </li>
+              <li class="category-rank-item no2">
+                <p>~70kg</p>
+              </li>
+              <li class="category-rank-item no2">
+                <p>71kg~</p>
+              </li>
+              <li class="category-rank-item no2">
+                <p>営業職</p>
+              </li>
+              <li class="category-rank-item no2">
+                <p>デスクワーク職</p>
+              </li>
+              <li class="category-rank-item no2">
+                <p>サービス職</p>
+              </li>
+              <li class="category-rank-item no2">
+                <p>医療従事者・整体師</p>
+              </li>
+              <li class="category-rank-item no2">
+                <p>学生（医療、身体関係）</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="item-sub-section-title">商品情報</h3>
+          <dl class="detail-info">
+            <dt>サイズ展開</dt>
+            <dd>
+              <ul>
+                <li class="active">シングル</li>
+                <li class="active">セミダブル</li>
+                <li class="active">ダブル</li>
+                <li class="active">クイーン</li>
+                <li>キング</li>
+              </ul>
+            </dd>
+
+            <dt>価格</dt>
+            <dd>¥69,000~</dd>
+
+            <dt>保証期間</dt>
+            <dd>10年間</dd>
+
+            <dt>決済方法</dt>
+            <dd>
+              <ul>
+                <li class="active">VISA</li>
+                <li class="active">MasterCard</li>
+                <li class="active">JCB</li>
+                <li class="active">AMEX</li>
+                <li class="active">ApplePay</li>
+                <li class="active">楽天Pay</li>
+                <li class="active">PayPay</li>
+                <li class="active">コンビニ決済</li>
+                <li class="active">代金引換決済</li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+        
+        <div>
+          <h3 class="item-sub-section-title">専門家レビュー</h3>
+          <div class="expert-review">
+            <img src="/images/koala-review-nakatomi.png">
+            <img src="/images/koala-review-kimura.png">
+            <img src="/images/koala-review-koshiishi.png">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="item-info-wrapper">
+        <p class="item-rank">ランキング3位</p>
+
+        <div class="item-info">
+          <div class="item-name">
+            <p>Emma</p>
+          </div>
+          <div class="item-image">
+            <img src="/images/main-emma.jpg" />
+          </div>
+          <div class="item-price">
+            ¥108,000~
+          </div>
+          <div class="review-summary">
+            <span>総合評価</span>
+            <img class="review-summary-star" src="/images/star-4.svg">
+          </div>
+          <div class="cv-buttons">
+            <a href="https://hb.afl.rakuten.co.jp/ichiba/31d8d064.6a828d2f.31d8d065.80475f4d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkoalasleep%2F101-0035%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" class="outline-button">
+              楽天で商品情報を見る
+            </a>
+            <a href="https://amzn.to/3VrQVRV" class="outline-button">
+              Amazonで商品情報を見る
+            </a>
+          </div>
+          <div class="review">
+            <img src="/images/graph-emma.png" />
+          </div>
+          <div class="category-ranking">
+            <h3 class="item-sub-section-title">ランキング情報</h3>
+            <div class="all-rank no3">
+              <i class="fa fa-crown"></i>
+              睡眠ログ総合3位
+            </div>
+            <ul class="category-rank-list">
+              <li class="category-rank-item no3">
+                <p>男性</p>
+              </li>
+              <li class="category-rank-item no3">
+                <p>女性</p>
+              </li>
+              <li class="category-rank-item no2">
+                <p>18歳〜</p>
+              </li>
+              <li class="category-rank-item no3">
+                <p>20歳〜</p>
+              </li>
+              <li class="category-rank-item no3">
+                <p>30歳〜</p>
+              </li>
+              <li class="category-rank-item no3">
+                <p>40歳〜</p>
+              </li>
+              <li class="category-rank-item no3">
+                <p>50歳〜</p>
+              </li>
+              <li class="category-rank-item">
+                <p>60歳〜</p>
+              </li>
+              <li class="category-rank-item no2">
+                <p>~40kg</p>
+              </li>
+              <li class="category-rank-item no3">
+                <p>~50kg</p>
+              </li>
+              <li class="category-rank-item no3">
+                <p>~60kg</p>
+              </li>
+              <li class="category-rank-item no3">
+                <p>~70kg</p>
+              </li>
+              <li class="category-rank-item no3">
+                <p>71kg~</p>
+              </li>
+              <li class="category-rank-item no3">
+                <p>営業職</p>
+              </li>
+              <li class="category-rank-item">
+                <p>デスクワーク職</p>
+              </li>
+              <li class="category-rank-item no3">
+                <p>サービス職</p>
+              </li>
+              <li class="category-rank-item no3">
+                <p>医療従事者・整体師</p>
+              </li>
+              <li class="category-rank-item no3">
+                <p>学生（医療、身体関係）</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="item-sub-section-title">商品情報</h3>
+          <dl class="detail-info">
+            <dt>サイズ展開</dt>
+            <dd>
+              <ul>
+                <li class="active">シングル</li>
+                <li class="active">セミダブル</li>
+                <li class="active">ダブル</li>
+                <li class="active">クイーン</li>
+                <li class="active">キング</li>
+              </ul>
+            </dd>
+
+            <dt>価格</dt>
+            <dd>¥108,000~</dd>
+
+            <dt>保証期間</dt>
+            <dd>10年間</dd>
+
+            <dt>決済方法</dt>
+            <dd>
+              <ul>
+                <li class="active">AmazonPay</li>
+                <li class="active">AMEX</li>
+                <li class="active">JCB</li>
+                <li class="active">MasterCard</li>
+                <li class="active">VISA</li>
+                <li class="active">Paidy</li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+        
+        <div>
+          <h3 class="item-sub-section-title">専門家レビュー</h3>
+          <div class="expert-review">
+            <img src="/images/emma-review-nakatomi.png">
+            <img src="/images/emma-review-kimura.png">
+            <img src="/images/emma-review-koshiishi.png">
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 女性 -->
+    <section id="female" class="item-section">
+      <h2>
+        女性に<br/>
+        おすすめのマットレスは？
+      </h2>
+
+      <p class="item-rank">ランキング1位</p>
+
+      <div class="item-info">
+        <div class="item-name">
+          <p>Limne</p>
+        </div>
+        <div class="item-image">
+          <img src="/images/main-limne.jpg" />
+        </div>
+        <div class="item-price">
+          ¥79,900~
+        </div>
+        <div class="review-summary">
+          <span>総合評価</span>
+          <img class="review-summary-star" src="/images/star-4.5.svg">
+        </div>
+        <div class="cv-buttons">
+          <a href="https://px.a8.net/svt/ejp?a8mat=3T8FRT+P086Q+4VLO+5ZMCI" rel="nofollow" class="outline-button">
+            公式サイトで商品情報を見る
+          </a>
+          <a href="https://hb.afl.rakuten.co.jp/ichiba/31d8db13.430c5d10.31d8db14.fe17bd16/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flimne%2Fv_41923043524792%2F&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" class="outline-button">
+            楽天で商品情報を見る
+          </a>
+          <a href="https://amzn.to/3VrQVRV" class="outline-button">
+            Amazonで商品情報を見る
+          </a>
+        </div>
+        <div class="review">
+          <img src="/images/graph-limne.png" />
+        </div>
+        <div class="category-ranking">
+          <h3 class="item-sub-section-title">ランキング情報</h3>
+          <div class="all-rank no1">
+            <i class="fa fa-crown"></i>
+            睡眠ログ総合1位
+          </div>
+          <ul class="category-rank-list">
+            <li class="category-rank-item no1">
+              <p>男性</p>
+            </li>
+            <li class="category-rank-item no1">
+              <p>女性</p>
+            </li>
+            <li class="category-rank-item no1">
+              <p>18歳〜</p>
+            </li>
+            <li class="category-rank-item no1">
+              <p>20歳〜</p>
+            </li>
+            <li class="category-rank-item no1">
+              <p>30歳〜</p>
+            </li>
+            <li class="category-rank-item no1">
+              <p>40歳〜</p>
+            </li>
+            <li class="category-rank-item no1">
+              <p>50歳〜</p>
+            </li>
+            <li class="category-rank-item no2">
+              <p>60歳〜</p>
+            </li>
+            <li class="category-rank-item no1">
+              <p>~40kg</p>
+            </li>
+            <li class="category-rank-item no1">
+              <p>~50kg</p>
+            </li>
+            <li class="category-rank-item no1">
+              <p>~60kg</p>
+            </li>
+            <li class="category-rank-item no1">
+              <p>~70kg</p>
+            </li>
+            <li class="category-rank-item no1">
+              <p>71kg~</p>
+            </li>
+            <li class="category-rank-item no1">
+              <p>営業職</p>
+            </li>
+            <li class="category-rank-item no1">
+              <p>デスクワーク職</p>
+            </li>
+            <li class="category-rank-item no1">
+              <p>サービス職</p>
+            </li>
+            <li class="category-rank-item no1">
+              <p>医療従事者・整体師</p>
+            </li>
+            <li class="category-rank-item no1">
+              <p>学生（医療、身体関係）</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="item-sub-section-title">商品情報</h3>
+        <dl class="detail-info">
+          <dt>サイズ展開</dt>
+          <dd>
+            <ul>
+              <li class="active">シングル</li>
+              <li class="active">セミダブル</li>
+              <li class="active">ダブル</li>
+              <li>クイーン</li>
+              <li>キング</li>
+            </ul>
+          </dd>
+
+          <dt>価格</dt>
+          <dd>¥79,900~</dd>
+
+          <dt>保証期間</dt>
+          <dd>10年間</dd>
+        </dl>
+      </div>
+
+      <div>
+        <h3 class="item-sub-section-title">専門家レビュー</h3>
+        <div class="expert-review">
+          <img src="/images/limne-review-nakatomi.png">
+          <img src="/images/limne-review-kimura.png">
+          <img src="/images/limne-review-koshiishi.png">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>運営者情報・調査概要</p>
+  </footer>
+</body>
+
+<script>
+  window.onload = function () {
+    const checkButton = document.getElementsByClassName('search-button');
+
+    for (i = 0; i < checkButton.length; i++) {
+      checkButton[i].addEventListener('click', function () {
+        const buttonName = this.getAttribute('name');
+        const searchForm = document.getElementById(`form-${buttonName}`);
+        const radioNodeList = searchForm.elements[buttonName];
+        const checkValue = radioNodeList.value;
+        
+        const targetSection = document.getElementById(checkValue);
+        const otherSection = document.getElementsByClassName('item-section');
+
+        for (n = 0; n < otherSection.length; n++) {
+          otherSection[n].classList.remove('is-show');
+          targetSection.classList.add('is-show');
+        }
+        const targetPosition = targetSection.getBoundingClientRect();
+        const targetTop = targetPosition.top + window.pageYOffset;
+        document.documentElement.scrollTop = targetTop;
+      });
+    }
+  };
+</script>
 
 <%- include('templates/_foot') -%>
