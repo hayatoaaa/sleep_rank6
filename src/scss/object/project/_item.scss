@@ -1,0 +1,264 @@
+/* 商品情報 */
+
+.item-section {
+  display: none;
+  &.all {
+    display: block;
+  }
+}
+
+.item-info-wrapper {
+  margin-bottom: 24px;
+  &:not(:first-of-type) {
+    padding-top: 24px;
+    border-top: 4px solid #ddd;
+  }
+}
+
+.item-rank {
+  margin: 0;
+}
+
+.item-section.is-show {
+  display: block;
+}
+
+.item-sub-section-title {
+  font-size: 24px;
+  color: #222;
+}
+
+.item-name > span {
+  display: block;
+}
+
+.item-name > p {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.item-image {
+  margin-top: 16px;
+}
+
+.item-price {
+  font-size: 24px;
+  margin-top: 16px;
+  p {
+    margin: 0;
+    font-size: 14px;
+    color: red;
+    span {
+      text-decoration: line-through;
+    }
+  }
+}
+
+.review-summary {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.review-summary-star {
+  width: 90px;
+}
+
+.cv-buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin-top: 24px;
+}
+
+.outline-button {
+  text-align: center;
+  display: block;
+  padding: 12px 24px;
+  box-sizing: border-box;
+  border-radius: 1000px;
+  border: 1px solid #15096b;
+  color: #15096b;
+  transition: all 0.2s ease;
+}
+
+.outline-button:hover {
+  color: white;
+  background-color: #15096b;
+  transition: all 0.2s ease;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: #15096b;
+}
+
+.review {
+  margin-top: 24px;
+}
+
+.category-ranking {
+  margin-top: 24px;
+  &.hidden {
+    display: none;
+  }
+}
+
+.all-rank {
+  display: none;
+  box-sizing: border-box;
+  color: white;
+  font-size: 24px;
+  padding: 8px 24px;
+  width: 100%;
+  border-radius: 1000px;
+  text-align: center;
+}
+
+.all-rank > i {
+  margin-right: 8px;
+}
+
+.all-rank.no1 {
+  display: block;
+  background-color: #feb104;
+}
+
+.all-rank.no2 {
+  display: block;
+  background-color: #acbbbc;
+}
+
+.all-rank.no3 {
+  display: block;
+  background-color: #c86102;
+}
+
+.category-rank-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.category-rank-item {
+  display: none;
+  box-sizing: border-box;
+  width: calc(50% - 4px);
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid;
+  text-align: center;
+  font-size: 14px;
+}
+
+.category-rank-item > p {
+  margin: 0;
+}
+
+.category-rank-item.no1 {
+  display: block;
+  border-color: #feb104;
+}
+
+.category-rank-item.no1 > p:after {
+  display: inline-block;
+  content: "1位";
+  font-size: 12px;
+  background-color: #feb104;
+  color: #fff;
+  border-radius: 1000px;
+  padding: 0 8px;
+  margin-left: 4px;
+}
+
+.category-rank-item.no2 {
+  display: block;
+  border-color: #acbbbc;
+}
+
+.category-rank-item.no2 > p:after {
+  content: "2位";
+  font-size: 12px;
+  background-color: #acbbbc;
+  color: #fff;
+  border-radius: 1000px;
+  padding: 4px 8px;
+  margin-left: 4px;
+}
+
+.category-rank-item.no3 {
+  display: block;
+  border-color: #c86102;
+}
+
+.category-rank-item.no3 > p:after {
+  content: "3位";
+  font-size: 12px;
+  background-color: #c86102;
+  color: #fff;
+  border-radius: 1000px;
+  padding: 4px 8px;
+  margin-left: 4px;
+}
+
+.coupon {
+  margin-top: 24px;
+}
+
+.detail-info {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  column-gap: 12px;
+  row-gap: 8px;
+}
+
+.detail-info > dt {
+  font-size: 14px;
+  color: #15096b;
+}
+
+.detail-info > dd {
+  font-size: 14px;
+  margin: 0;
+}
+
+.detail-info > dd > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0;
+}
+
+.detail-info > dd > ul > li {
+  background: #f0f0f0;
+  font-size: 12px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+.detail-info > dd > ul > li.active {
+  background: #15096b;
+  color: #fff;
+}
+
+/* 専門家レビュー */
+.expert-review-title {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.expert-review {
+  overflow-x: scroll;
+  display: flex;
+  align-items: start;
+  column-gap: 16px;
+  margin: 0 -16px;
+  padding: 0 16px 8px 16px;
+  img {
+    width: 300px;
+    border-radius: 16px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  }
+}

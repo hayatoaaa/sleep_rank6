@@ -1,6 +1,7 @@
 body {
   width: 100%;
-  max-width: 390px;
+  font-family: "Noto Sans JP", sans-serif;
+  max-width: 440px;
   margin: 0 auto;
   font-size: 16px;
   color: #222;
@@ -8,6 +9,7 @@ body {
 
 h1 {
   width: 100%;
+  margin: 0;
 }
 
 p {
@@ -82,6 +84,14 @@ h2 {
 .caption > span {
   font-size: 14px;
   display: block;
+}
+
+.mechanism-image {
+  p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: #888;
+  }
 }
 
 /* ランキング */
@@ -222,6 +232,9 @@ h2 {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  &:not(first-of-type) {
+    margin-top: 24px;
+  }
 }
 
 .option-name {
@@ -244,11 +257,11 @@ h2 {
   width: 100%;
   gap: 8px;
   margin: 0;
-}
-
-.options li {
-  width: 50%;
-  position: relative;
+  flex-wrap: wrap;
+  li {
+    width: calc(50% - 8px);
+    position: relative;
+  }
 }
 
 .option-label {
@@ -293,271 +306,3 @@ h2 {
   background-color: #15096b;
   color: #fff;
 }
-
-/* 商品情報 */
-
-/* .item-section {
-  display: none;
-} */
-
-.item-info-wrapper {
-  margin-bottom: 24px;
-}
-
-.item-rank {
-  margin: 0;
-}
-
-.item-section.is-show {
-  display: block;
-}
-
-.item-sub-section-title {
-  font-size: 24px;
-  color: #222;
-}
-
-.item-name > span {
-  display: block;
-}
-
-.item-name > p {
-  font-size: 24px;
-  margin: 0;
-}
-
-.item-image {
-  margin-top: 16px;
-}
-
-.item-price {
-  font-size: 24px;
-  margin-top: 16px;
-}
-
-.review-summary {
-  display: flex;
-  align-items: center;
-  column-gap: 8px;
-}
-
-.review-summary-star {
-  width: 90px;
-}
-
-.cv-buttons {
-  display: flex;
-  flex-direction: column;
-  row-gap: 16px;
-  margin-top: 24px;
-}
-
-.outline-button {
-  text-align: center;
-  display: block;
-  padding: 12px 24px;
-  box-sizing: border-box;
-  border-radius: 1000px;
-  border: 1px solid #15096b;
-  color: #15096b;
-  transition: all 0.2s ease;
-}
-
-.outline-button:hover {
-  color: white;
-  background-color: #15096b;
-  transition: all 0.2s ease;
-}
-
-a:-webkit-any-link {
-  text-decoration: none;
-  color: #15096b;
-}
-
-.review {
-  margin-top: 24px;
-}
-
-.category-ranking {
-  margin-top: 24px;
-}
-
-.all-rank {
-  box-sizing: border-box;
-  color: white;
-  font-size: 24px;
-  padding: 8px 24px;
-  width: 100%;
-  border-radius: 1000px;
-  text-align: center;
-}
-
-.all-rank > i {
-  margin-right: 8px;
-}
-
-.all-rank.no1 {
-  background-color: #feb104;
-}
-
-.category-rank-list {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.category-rank-item {
-  display: none;
-  box-sizing: border-box;
-  width: calc(50% - 4px);
-  padding: 8px;
-  border-radius: 3px;
-  border: 1px solid;
-  text-align: center;
-  font-size: 14px;
-}
-
-.category-rank-item > p {
-  margin: 0;
-}
-
-.category-rank-item.no1 {
-  display: block;
-  border-color: #feb104;
-}
-
-.category-rank-item.no1 > p:after {
-  display: inline-block;
-  content: "1位";
-  font-size: 12px;
-  background-color: #feb104;
-  color: #fff;
-  border-radius: 1000px;
-  padding: 0 8px;
-  margin-left: 4px;
-}
-
-.category-rank-item.no2 {
-  display: block;
-  border-color: #acbbbc;
-}
-
-.category-rank-item.no2 > p:after {
-  content: "2位";
-  font-size: 12px;
-  background-color: #acbbbc;
-  color: #fff;
-  border-radius: 1000px;
-  padding: 4px 8px;
-  margin-left: 4px;
-}
-
-.category-rank-item.no3 {
-  display: block;
-  border-color: #c86102;
-}
-
-.category-rank-item.no3 > p:after {
-  content: "3位";
-  font-size: 12px;
-  background-color: #c86102;
-  color: #fff;
-  border-radius: 1000px;
-  padding: 4px 8px;
-  margin-left: 4px;
-}
-
-.coupon {
-  margin-top: 24px;
-}
-
-.detail-info {
-  display: grid;
-  grid-template-columns: 70px 1fr;
-  column-gap: 12px;
-  row-gap: 8px;
-}
-
-.detail-info > dt {
-  font-size: 14px;
-  color: #15096b;
-}
-
-.detail-info > dd {
-  font-size: 14px;
-  margin: 0;
-}
-
-.detail-info > dd > ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  margin: 0;
-}
-
-.detail-info > dd > ul > li {
-  background: #f0f0f0;
-  font-size: 12px;
-  padding: 2px 8px;
-  white-space: nowrap;
-}
-
-.detail-info > dd > ul > li.active {
-  background: #15096b;
-  color: #fff;
-}
-
-/* 専門家レビュー */
-
-.expert-review {
-  display: flex;
-  flex-direction: column;
-  row-gap: 16px;
-}
-
-/* .tab_box {
-  margin-top: 50px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.tabs {
-  margin: 0;
-}
-
-.tab_item {
-  cursor: pointer;
-  width: 50%;
-  height: 50px;
-  border-bottom: 3px solid #15096B;
-  background-color: #f0f0f0;
-  line-height: 50px;
-  font-size: 16px;
-  text-align: center;
-  color: #565656;
-  display: block;
-  float: left;
-  text-align: center;
-  font-weight: bold;
-  transition: all 0.2s ease;
-}
-
-.tab_item.is-active {
-  background-color: #15096B;
-  color: #fff;
-}
-
-.tab_content {
-  display: none;
-  padding: 16px;
-  clear: both;
-  overflow: hidden;
-}
-
-.tab_content.is-active {
-  display: block;
-} */
