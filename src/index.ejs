@@ -1,5 +1,3 @@
-<% meta = { pageTitle:'ホーム', desc:'このサイトの説明' }; %>
-
 <%- include('templates/_head') -%>
 
 <body>
@@ -13,7 +11,7 @@
     </h1>
     <section id="section1">
       <p>
-        そんなあなたのお悩みを解消するために、100人以上の方への体験調査と〇〇や〇〇の睡眠のプロの方n名に6つのマットレスをレビューしていただきました！
+        そんなあなたのお悩みを解消するために、100人以上の方への体験調査と睡眠や整体のプロの方5名に6つのマットレスをレビューしていただきました！
       </p>
       <ul class="col col-2">
         <li class="col-item">
@@ -35,7 +33,7 @@
       </ul>
     </section>
     <section id="section2">
-      <h2>〇〇に〇〇な〇〇n名による監修</h2>
+      <h2>睡眠や整体のプロ5名による監修</h2>
       <ul class="expert-list">
         <li class="expert-item">
           <img src="/images/icon-nakatomi.png" />
@@ -97,12 +95,12 @@
       <p>100人の方に実際に寝て体感してもらいました！</p>
       <img src="/images/dummy.png" />
       <p>
-        エマスリープ、Nell、Limne、トゥルースリーパー、コアラマットレス、エアウィーブのマットレスを名前を隠した状態で体験してもらいアンケート調査
+        エマスリープ、NELL、Limne、トゥルースリーパー、コアラマットレス、エアウィーブのマットレスを名前を隠した状態で体験してもらいアンケート調査
       </p>
-      <h3 class="emphasis-sentence">
+      <!-- <h3 class="emphasis-sentence">
         20名の方から睡眠ログを提供いただき、実際の睡眠の快適度合いを調査
       </h3>
-      <img src="/images/dummy.png" />
+      <img src="/images/dummy.png" /> -->
     </section>
 
     <section id="section5">
@@ -125,7 +123,7 @@
         </div>
         <div class="grid-row">
           <div class="icon-no1">1</div>
-          <div>LIMNE</div>
+          <div>Limne</div>
           <div>8.38</div>
           <div>8.3</div>
           <div>8.26</div>
@@ -136,7 +134,7 @@
         </div>
         <div class="grid-row">
           <div class="icon-no2">2</div>
-          <div>koala</div>
+          <div>コアラマットレス</div>
           <div>7.98</div>
           <div>7.88</div>
           <div>7.62</div>
@@ -147,7 +145,7 @@
         </div>
         <div class="grid-row">
           <div class="icon-no3">3</div>
-          <div>Emma</div>
+          <div>エマスリープ</div>
           <div>7.53</div>
           <div>7.48</div>
           <div>7.21</div>
@@ -194,17 +192,17 @@
         <i class="fa fa-arrows-left-right"></i>
         左右にスクロールできます
       </div>
-      <div class="ranking-comment">
+      <!-- <div class="ranking-comment">
         <div class="ranking-commenter">
           <img src="/images/dummy.png" />
           <span>睡眠カウンセラー</span>
-          <p>山田先生</p>
+          <p>先生</p>
         </div>
         <div class="ranking-comment-content">
           <h3 class="emphasis-sentence">「マットレスを選ぶ決め手は〇〇」</h3>
           <p>エマスリープ、Nell、Limne、トゥルースリーパー、コアラマットレス、エアウィーブのマットレスを名前を隠した状態で体験してもらいアンケート調査</p>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <section id="section6" class="search-section">
@@ -785,9 +783,7 @@
     </section>
 
   </main>
-  <footer>
-    <p>運営者情報・調査概要</p>
-  </footer>
+  <%- include('templates/_footer') -%>
 </body>
 
 <script>
