@@ -47,10 +47,12 @@
   margin-top: 16px;
   p {
     margin: 0;
-    font-size: 14px;
+    font-size: 20px;
     color: red;
+    font-weight: bold;
     span {
       text-decoration: line-through;
+      font-weight: normal;
     }
   }
 }
@@ -170,6 +172,7 @@ a:-webkit-any-link {
   border-radius: 1000px;
   padding: 0 8px;
   margin-left: 4px;
+  white-space: nowrap;
 }
 
 .category-rank-item.no2 {
@@ -185,6 +188,7 @@ a:-webkit-any-link {
   border-radius: 1000px;
   padding: 4px 8px;
   margin-left: 4px;
+  white-space: nowrap;
 }
 
 .category-rank-item.no3 {
@@ -200,6 +204,7 @@ a:-webkit-any-link {
   border-radius: 1000px;
   padding: 4px 8px;
   margin-left: 4px;
+  white-space: nowrap;
 }
 
 .coupon {
