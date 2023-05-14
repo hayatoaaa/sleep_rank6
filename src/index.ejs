@@ -15,20 +15,12 @@
       </p>
       <ul class="col col-2">
         <li class="col-item">
-          <img src="/images/dummy.png" />
-          <p class="caption">権威者によるマットレス体験会</p>
+          <img src="/images/survey-image-1.jpg" />
+          <p class="caption">100名によるマットレス体験会</p>
         </li>
         <li class="col-item">
-          <img src="/images/dummy.png" />
-          <p class="caption">権威者によるマットレス体験会</p>
-        </li>
-        <li class="col-item">
-          <img src="/images/dummy.png" />
-          <p class="caption">権威者によるマットレス体験会</p>
-        </li>
-        <li class="col-item">
-          <img src="/images/dummy.png" />
-          <p class="caption">権威者によるマットレス体験会</p>
+          <img src="/images/survey-image-2.jpg" />
+          <p class="caption">体験会を通したアンケート調査</p>
         </li>
       </ul>
     </section>
@@ -93,7 +85,7 @@
         マットレスは？
       </h2>
       <p>100人の方に実際に寝て体感してもらいました！</p>
-      <img src="/images/dummy.png" />
+      <img src="/images/survey-image-3.jpg" />
       <p>
         エマスリープ、NELL、Limne、トゥルースリーパー、コアラマットレス、エアウィーブのマットレスを名前を隠した状態で体験してもらいアンケート調査
       </p>
@@ -798,7 +790,11 @@
         }
         const targetPosition = targetSection.getBoundingClientRect();
         const targetTop = targetPosition.top + window.pageYOffset;
-        document.documentElement.scrollTop = targetTop;
+        window.scrollTo({
+          top: targetTop,
+          behavior: 'smooth'
+          }
+        )
       });
     }
   };
