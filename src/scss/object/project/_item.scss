@@ -17,6 +17,36 @@
 
 .item-rank {
   margin: 0;
+  &.no1::before {
+    content: "\f521";
+    font-family: "FontAwesome";
+    font-weight: 300;
+    display: inline-block;
+    line-height: 1;
+    font-size: 16px;
+    color: #feb104;
+    margin-right: 4px;
+  }
+  &.no2::before {
+    content: "\f521";
+    font-family: "FontAwesome";
+    font-weight: 300;
+    display: inline-block;
+    line-height: 1;
+    font-size: 16px;
+    color: #acbbbc;
+    margin-right: 4px;
+  }
+  &.no3::before {
+    content: "\f521";
+    font-family: "FontAwesome";
+    font-weight: 300;
+    display: inline-block;
+    line-height: 1;
+    font-size: 16px;
+    color: #c86102;
+    margin-right: 4px;
+  }
 }
 
 .item-section.is-show {
